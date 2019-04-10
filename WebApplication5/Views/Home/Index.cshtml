@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@Html.Partial("~/Views/Usuarios/Index.cshtml")
+
+@section scripts{
+
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+   
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "searching": false,
+                "lengthChange": false
+            });
+        });
+    </script>
+
+}
